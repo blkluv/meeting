@@ -5,7 +5,7 @@
 <br>
 (https://github.com/keshavguptawork/meetons-purple)
 
-[![Foo](public/images/browsers.png)
+[![Foo](public/images/browsers.png)]
 
 <br>
 
