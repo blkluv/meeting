@@ -102,7 +102,7 @@ const api_key_secret = process.env.API_KEY_SECRET || "MeetONS_default_secret";
 
 // Ngrok config
 const ngrok = require("ngrok");
-const ngrokEnabled = process.env.NGROK_ENABLED || false;
+const ngrokEnabled = process.env.NGROK_ENABLED || true;
 const ngrokAuthToken = process.env.NGROK_AUTH_TOKEN;
 
 // Stun config
@@ -479,7 +479,7 @@ server.listen(port, null, () => {
   );
 
   // https tunnel
-  if (ngrokEnabled == "true" && isHttps === false) {
+  if (ngrokEnabled == "true" && isHttps === true) {
     ngrokStart();
   } else {
     // server settings
