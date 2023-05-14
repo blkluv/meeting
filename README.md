@@ -5,11 +5,7 @@
 <br>
 (https://github.com/keshavguptawork/meetons-purple)
 
-[![Foo](public/images/browsers.png)]
-
 <br>
-
-[![MeetONS](public/images/preview.png)](https://viMeetONSleverapps.io/)
 
 ## Features
 
@@ -47,7 +43,7 @@
 - Clone this repo
 
 ```bash
-git clone https://github.com/Jaideep25/MeetONS.git
+git clone https://github.com/keshav
 cd MeetONS
 ```
 
@@ -92,74 +88,7 @@ npm start
 
 ---
 
-## Docker
-
-![docker](public/images/docker.png)
-
-- Install docker engine: https://docs.docker.com/engine/install/
-- Install docker compose: https://docs.docker.com/compose/install/
-
-```bash
-# copy .env.template to .env (edit it according to your needs)
-$ cp .env.template .env
-# Copy docker-compose.template.yml in docker-compose.yml (edit it according to your needs)
-$ cp docker-compose.template.yml docker-compose.yml
-# Get official image from Docker Hub
-$ docker pull MeetONS/p2p:latest
-# create and start containers
-$ docker-compose up # -d
-# to stop and remove resources
-$ docker-compose down
-```
-
-[//]: https://img.shields.io/badge/-[//]: #![webrtc](public/images/webrtc.png)
-
-- Open http://localhost:3000 in browser
-
-## API
-
-The `response` will give you a `entrypoint / Room URL` for `your meeting`, where `authorization: API_KEY_SECRET`.
-
-```bash
-curl -X POST "http://localhost:3000/api/v1/meeting" -H "authorization: MeetONS_default_secret" -H "Content-Type: application/json"
-curl -X POST "https://MeetONS.up.railway.app/api/v1/meeting" -H "authorization: viMeetONSefault_secret" -H "Content-Type: application/json"
-curl -X POST "https://MeetONS.cleverapps.io/api/v1/meeting" -H "authorization: viMeetONSefault_secret" -H "Content-Type: application/json"
-```
-
-## API Documentation
-
-The server exposes a [swagger](https://swagger.io/) document at http://localhost:3000/api/v1/docs. Or you can check it out live on [railway](https://MeetONS.up.railway.app/api/v1/docs) or [heroku](https://viMeetONSleverapps.io/api/v1/docs).
-
 ---
-
-If you want to use a client on another computer/network, make sure you publish your server on an `HTTPS` connection.
-You can use a service like [ngrok](https://ngrok.com/) or deploy it on:
-
-<br>
-
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/)
-
-`DEMO` https://MeetONS.cleverapps.io/
-
-<br>
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
-
-`DEMO :` https://MeetONS.up.railway.app/
-
----
-
-## Security
-
-For `Security` concerning, please follow [this documentation](./SECURITY.md).
-
----
-
-## Credits
-
-- Special thanks to Miroslav Pejic!
-
-From where I took inspiration for this project. ❤️
 
 ## Contributing
 
