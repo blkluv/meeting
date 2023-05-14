@@ -43,7 +43,7 @@
 - Clone this repo
 
 ```bash
-git clone https://github.com/keshavguptaworkmail/meeton-purple
+git clone https://github.com/keshavguptawork/meeton-purple
 cd meetons-purple
 ```
 ## Install dependencies
