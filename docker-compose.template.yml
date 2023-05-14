@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  MeetONS:
+    image: MeetONS/latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: MeetONS
+    hostname: MeetONS
+    volumes:
+      - .env:/src/.env:ro
+      # These volumes are not mandatory, uncomment if you want to use it
+      # - ./app/:/src/app/:ro
+      # - ./public/:/src/public/:ro
+    restart: unless-stopped
+    ports:
+      - "${PORT}:${PORT}"
+# Uncomment below, remove "ports:" section above and configure labels as
+# needed for LetsEncrypt TLS certificates with Traefik.
+# See https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/
+#   expose:
+#     - 3000
+#   labels:
+#     - "traefik.enable=true"
+#     - "traefik.http.routers.MeetONS.rule=Host('iideolify.example.com`)"
+#     - "traefik.http.routers.MeetONS.entrypoints=websecure"
+#     - "traefik.http.routers.MeetONS.tls.certresolver=myresolver"
+#     - "traefik.http.services.MeetONS.loadbalancer.server.port=3000"
