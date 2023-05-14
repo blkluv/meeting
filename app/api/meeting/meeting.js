@@ -2,8 +2,8 @@ const fetch = require("node-fetch");
 
 const API_KEY = "MeetONS_default_secret";
 // const MeetONS_URL = 'http://localhost:3000/api/v1/meeting';
-// const MeetONS_URL = 'https://MeetONS.up.railway.app/api/v1/meeting';
-const MeetONS_URL = "https://MeetONS.cleverapps.io/api/v1/meeting";
+// const MeetONS_URL = 'https://meetons.up.railway.app/api/v1/meeting';
+const MeetONS_URL = "https://meetons.cleverapps.io/api/v1/meeting";
 
 function getResponse() {
   return fetch(MeetONS_URL, {

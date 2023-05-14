@@ -25,7 +25,7 @@ dependencies: {
  * MeetONS P2P - Server component
  *
  * @link    GitHub: https://github.com/keshavguptaworkmail/meetons-purple
- * @link    Live demo: https://MeetONS.up.railway.app or https://MeetONS.onrender.com
+ * @link    Live demo: https://meetons.up.railway.app or https://MeetONS.onrender.com
  * @license For open source use: AGPLv3
  * @license For commercial or closed source, contact us at keshavguptaworkmail@gmail.com
  * @author  keshavgupta keshavguptaworkmail@gmail.com
@@ -263,8 +263,8 @@ app.get(["/test"], (req, res) => {
   }
   /*
         http://localhost:3000/test?iceServers=[{"urls":"stun:stun.l.google.com:19302"},{"urls":"turn:openrelay.metered.ca:443","username":"openrelayproject","credential":"openrelayproject"}]
-        https://MeetONS.up.railway.app//test?iceServers=[{"urls":"stun:stun.l.google.com:19302"},{"urls":"turn:openrelay.metered.ca:443","username":"openrelayproject","credential":"openrelayproject"}]
-        https://MeetONS.cleverapps.io/test?iceServers=[{"urls":"stun:stun.l.google.com:19302"},{"urls":"turn:openrelay.metered.ca:443","username":"openrelayproject","credential":"openrelayproject"}]
+        https://meetons.up.railway.app//test?iceServers=[{"urls":"stun:stun.l.google.com:19302"},{"urls":"turn:openrelay.metered.ca:443","username":"openrelayproject","credential":"openrelayproject"}]
+        https://meetons.cleverapps.io/test?iceServers=[{"urls":"stun:stun.l.google.com:19302"},{"urls":"turn:openrelay.metered.ca:443","username":"openrelayproject","credential":"openrelayproject"}]
     */
   res.sendFile(views.stunTurn);
 });
@@ -275,7 +275,7 @@ app.get("/join/", (req, res) => {
     log.debug("Request Query", req.query);
     /* 
             http://localhost:3000/join?room=test&name=MeetONS&audio=1&video=1&screen=1&notify=1
-            https://MeetONS.up.railway.app/join?room=test&name=MeetONS&audio=1&video=1&screen=1&notify=1
+            https://meetons.up.railway.app/join?room=test&name=MeetONS&audio=1&video=1&screen=1&notify=1
             https://MeetONS.cleverapps.io/join?room=test&name=MeetONS&audio=1&video=1&screen=1&notify=1
         */
     const { room, name, audio, video, screen, notify } = req.query;
