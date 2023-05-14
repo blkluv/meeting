@@ -28,14 +28,14 @@
 
 ## Demo
 
-- `Open` https://MeetONS.cleverapps.io/newcall `or` https://viMeetONSp.railway.app/newcall
+- `Open` https://localhost:3000/newcall
 - `Pick` your personal Room name and `Join To Room`
 - `Allow` to use the camera and microphone
 - `Share` the Room URL and `Wait` someone to join for video conference
 
 ## Room name
 
-- You can also `join` directly to your room name by going to https://MeetONS.cleverapps.io/join/your-room-name-goes-here `or` https://viMeetONSp.railway.app/join/your-room-name-goes-here
+- You can also `join` directly to your room name by going to https://localhost:3000/join/your-room-name-goes-here
 
 ## Quick start
 
@@ -43,35 +43,9 @@
 - Clone this repo
 
 ```bash
-git clone https://github.com/keshav
-cd MeetONS
+git clone https://github.com/keshavguptaworkmail/meeton-purple
+cd meetons-purple
 ```
-
-## Setup Turn and Ngrok
-
-- Copy .env.template to .env
-
-```bash
-cp .env.template .env
-```
-
-`Turn`
-
-Not mandatory but recommended.
-
-- Create an account on http://numb.viagenie.ca
-- Get your Account USERNAME and PASSWORD
-- Fill in your credentials in the `.env` file
-- Set `TURN_ENABLED=true`, if you want enable the Turn Server.
-
-`Ngrok`
-
-Not mandatory at all, but useful for tests and debug.
-
-- Get started for free https://ngrok.com/
-- Fill in your authtoken in the `.env` file
-- Set `NGROK_ENABLED=true`, if you want to expose the server using the https tunnel, starting it from your local PC.
-
 ## Install dependencies
 
 ```js
@@ -85,8 +59,6 @@ npm start
 ```
 
 - Open http://localhost:3000 in browser
-
----
 
 ---
 
